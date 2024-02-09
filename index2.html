@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Demo</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="fast.css">
     <script src="fast.js"></script>
 </head>
 <body>
@@ -12,9 +12,9 @@
 
         <section class="left">
 
-            <div class="certificate">
-                <span id="nameOutput"></span>
-                <span id="info"></span>
+            <div class="certificate " id="certificate">
+                <span id="nameOutput" class="visible">Test Name</span>
+                <span id="info">Test Info</span>
             </div>
 
         </section>
@@ -23,7 +23,7 @@
 
             <form action="" id="myForm">
     
-                <input type="text" name="name" id="Name" placeholder="Name">
+                <input type="text" name="name" id="name" placeholder="Name">
         
                 <select name="type" id="type">
                     <option value="A">A</option>
@@ -31,6 +31,7 @@
                     <option value="C">C</option>
                     <option value="D">D</option>
                 </select>
+                <input type="submit" value="Generate">
         
             </form>
         </section>
